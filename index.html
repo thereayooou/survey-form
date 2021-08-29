@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Mozart Music School Admission Survey</title>
+
+    </head>
+    <body>
+        <div class="header">
+    <h1 id="title">Summer Mozart Music School Admission Application</h1>
+    <p id="description">Fill in the form to apply for our free music school that will take place from 15th of June to 30th of August!</p>
+  </div>
+
+  <form id="survey-form">
+
+    <div class="wrapper text">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div class="wrapper text">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your e-mail" required>
+    </div>
+
+    <div class="wrapper text">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" name="age" type="number" min="7" max="100" placeholder="Enter your age">
+    </div>
+
+    <div class="wrapper">
+      <label for="dropdown">Your main social status</label>
+      <select id="dropdown" name="something">
+          <optgroup label="School">
+            <option value="elementary_school">Elementary school student</option>
+            <option value="high_school">High school student</option>
+          </optgroup>
+          <optgroup label="Higher education">
+            <option value="undergrad_student">Undergraduate student</option>
+            <option value="grad_student">Graduate student</option>
+          </optgroup>
+          <optgroup label="Miscellaneous">
+            <option value="employee">Employee</option>
+            <option value="self_employee">Self-employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="unemployed">Other</option>
+            <option value="silent">Prefer not to say</option>
+          </optgroup>
+      </select>
+    </div>
+
+    <div class="wrapper">
+      <label for="music_passion">How long have you been interested in music as a cool way of pastime?</label>
+
+      <section>
+        <input id="lt_year" type="radio" name="music_passion" value="lessthan_year">
+        <label for="lt_year">< 1 year</label>
+      </section>
+
+      <section>
+        <input id="eq_year" type="radio" name="music_passion" value="equal_year">
+        <label for="eq_year">1 year</label>
+      </section>
+
+      <section>
+        <input id="lt_three_year" type="radio" name="music_passion" value="lt_three_year">
+        <label for="lt_three_year">< 3 years</label>
+      </section>
+
+      <section>
+        <input id="lt_five_year" type="radio" name="music_passion" value="lt_five_year">
+        <label for="lt_five_year">< 5 years</label>
+      </section>
+
+      <section>
+        <input id="five_year_plus" type="radio" name="music_passion" value="five_year_plus">
+        <label for="five_year_plus">5+ years</label>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <label for="music_exp">Have you ever studied/Are you studying at a musical educational establishment?</label>
+
+      <section>
+        <input id="yes" type="radio" name="music_exp" value="opt1">
+        <label for="yes">Yes</label>
+      </section>
+
+      <section>
+        <input id="no" type="radio" name="music_exp" value="opt2">
+        <label for="no">No</label>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <label for="music_lvl">Evaluate your level of music understanding</label>
+
+      <section>
+        <input id="very_poor" type="radio" name="music_lvl" value="very_poor">
+        <label for="very_poor">Very poor</label>
+      </section>
+
+      <section>
+        <input id="poor" type="radio" name="music_lvl" value="poor">
+        <label for="poor">Poor</label>
+      </section>
+
+      <section>
+        <input id="avg" type="radio" name="music_lvl" value="average">
+        <label for="avg">Average</label>
+      </section>
+
+      <section>
+        <input id="above_avg" type="radio" name="music_lvl" value="above_average">
+        <label for="above_avg">Above the average</label>
+      </section>
+
+      <section>
+        <input id="high" type="radio" name="music_lvl" value="high">
+        <label for="high">High</label>
+      </section>
+
+      <section>
+        <input id="very_high" type="radio" name="music_lvl" value="very_high">
+        <label for="very_high">Very high</label>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <label for="instruments">What instruments have you every (consciously) used to reproduce sound?</label>
+
+      <section>
+        <input id="a_guitar" type="checkbox" name="instruments" value="a_guitar">
+        <label for="a_guitar">Acoustic guitar</label>
+      </section>
+
+      <section>
+        <input id="e_guitar" type="checkbox" name="instruments" value="e_guitar">
+        <label for="e_guitar">Electric guitar</label>
+      </section>
+
+      <section>
+        <input id="piano" type="checkbox" name="instruments" value="piano">
+        <label for="piano">Piano</label>
+      </section>
+
+      <section>
+        <input id="voice" type="checkbox" name="instruments" value="voice">
+        <label for="voice">Voice (as a professional instrument)</label>
+      </section>
+
+      <section>
+        <input id="drums" type="checkbox" name="instruments" value="drums">
+        <label for="drums">Drums</label>
+      </section>
+
+      <section>
+        <input id="wind" type="checkbox" name="instruments" value="wind">
+        <label for="wind">Wind instruments</label>
+      </section>
+
+      <section>
+        <input id="none" type="checkbox" name="instruments" value="none">
+        <label for="none">None</label>
+      </section>
+
+      <section>
+        <input id="other" type="checkbox" name="instruments" value="other">
+        <label for="other">Other</label>
+        <input type="text" name="instruments" placeholder="Write your option here">
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <label for="skills">Select the skill(s) you would like to start acquiring during the summer school</label>
+
+      <section>
+        <input id="skill_piano" type="checkbox" name="skills" value="skill_piano">
+        <label for="skill_piano">Piano</label>
+      </section>
+
+      <section>
+        <input id="skill_guitar" type="checkbox" name="skills" value="skill_guitar">
+        <label for="skill_guitar">Guitar</label>
+      </section>
+
+      <section>
+        <input id="skill_vocals" type="checkbox" name="skills" value="skill_vocals">
+        <label for="skill_vocals">Vocals</label>
+      </section>
+
+      <section>
+        <input id="skill_drums" type="checkbox" name="skills" value="skill_drums">
+        <label for="skill_drums">Drums</label>
+      </section>
+
+      <section>
+        <input id="skill_solfeggio" type="checkbox" name="skills" value="skill_solfeggio">
+        <label for="skill_solfeggio">Solfeggio</label>
+      </section>
+
+      <section>
+        <input id="skill_ears" type="checkbox" name="skills" value="skill_ears">
+        <label for="skill_ears">Ear for music</label>
+      </section>
+
+      <section>
+        <input id="skill_act" type="checkbox" name="skills" value="skill_act">
+        <label for="skill_act">Acting skills</label>
+      </section>
+
+      <section>
+        <input id="skill_stage" type="checkbox" name="skills" value="skill_stage">
+        <label for="skill_stage">Stage movement and speech</label>
+      </section>
+
+      <section>
+        <input id="skill_engineer" type="checkbox" name="skills" value="skill_engineer">
+        <label for="skill_engineer">Audio engineering</label>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <label for="comments">Additional words to let us know you better</label>
+      <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Ask questions, write more about yourself, leave your wishes, etc." maxlength="500"></textarea>
+    </div>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+    </body>
+</html>
+
