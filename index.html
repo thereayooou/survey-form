@@ -34,7 +34,7 @@
     <div class="wrapper">
       <label for="dropdown">Your main social status</label>
       <select id="dropdown" name="status">
-          <option>Select one...</option>
+          <option selected>Select one...</option>
           <optgroup label="School">
             <option value="elementary_school">Elementary school student</option>
             <option value="high_school">High school student</option>
@@ -169,9 +169,9 @@
       </section>
 
       <section>
-        <input id="other" type="checkbox" name="instruments" value="other">
+        <input id="other" type="checkbox" name="instruments">
         <label for="other">Other</label>
-        <input type="text" name="instruments" placeholder="Write your option here">
+        <input class="other" type="text" name="instruments" placeholder="Write your option here">
       </section>
     </div>
 
@@ -229,7 +229,7 @@
       <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Ask questions, write more about yourself, leave your wishes, etc." maxlength="500"></textarea>
     </div>
 
-    <input type="submit" id="submit" value="Submit">
+    <button type="submit" id="submit">Apply</button>
   </form>
     </body>
 </html>
